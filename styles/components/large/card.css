@@ -1,202 +1,195 @@
-.card{
-    background-color: hsla(0, 0%, 91%, 0.589);
-    border-radius: 1rem;
-    margin-top: 14.9%;
-    box-shadow: inset 1px 1px 1px hsla(0, 0%, 100%, 0.667),
+.card {
+  background-color: hsla(0, 0%, 91%, 0.589);
+  border-radius: 1rem;
+  margin-top: 14.9%;
+  box-shadow: inset 1px 1px 1px hsla(0, 0%, 100%, 0.667),
     inset -1px -1px 1px hsla(var(--hue-1), 40%, 20%, 0.188),
     5px 5px 10px hsla(var(--hue-1), 40%, 20%, 0.188);
-    display: grid;
-   }
+  display: grid;
+}
 
-    /* -----------Header-------- */
+.container__heading {
+  display: grid;
+  grid-area: top;
+}
+/* -----------Header-------- */
 
-    .card__header {
-    background: linear-gradient(to bottom right, hsl(var(--hue-1), 30%, 40%), hsl(var(--hue-1), 45%, 55%));
-    color: var(--white);
-    border-radius: 1rem 1rem 0rem 0rem;
-    padding-top: 11.3%;
-    position: relative;
-    }
-    .card__title{
-      
-      padding-left: 3%;
-      padding-bottom: .8rem;
-    }
-    .card--success header{
-      padding-bottom: .2rem;
-      padding-top: 11%;
-    }
-    .card--danger header{
-      padding-bottom: .2rem;
-      padding-top: 10.8%;
-    }
-    .card__title--large{
-      font-size: 3rem;
-      display: block;
-    }
-    .card__title--small{
-      margin-top: -.5rem;
-      font-size: 1.5rem;
-      display: block;
-    }
+.card__header {
+  background: linear-gradient(
+    to bottom right,
+    hsl(var(--hue-1), 30%, 40%),
+    hsl(var(--hue-1), 45%, 55%)
+  );
+  color: var(--white);
+  border-radius: 1rem 1rem 0rem 0rem;
+  padding-top: 11.3%;
+  position: relative;
+}
+.card__title {
+  padding-left: 3%;
+  padding-bottom: 0.8rem;
+}
+.card--success header {
+  padding-bottom: 0.2rem;
+  padding-top: 11%;
+}
+.card--danger header {
+  padding-bottom: 0.2rem;
+  padding-top: 10.8%;
+}
+.card__title--large {
+  font-size: 3rem;
+  display: block;
+}
+.card__title--small {
+  margin-top: -0.5rem;
+  font-size: 1.5rem;
+  display: block;
+}
 
+/* -----------Text-block-------- */
+.card__text-block {
+  background-color: hsl(var(--hue-4), 30%, 80%);
+  padding-bottom: 9%;
+  padding-top: 7%;
+}
 
-     /* -----------Text-block-------- */
-    .card__text-block {
-    background-color: hsl(var(--hue-4), 30%, 80%);
-    padding-bottom: 9%;
-    padding-top: 7%; 
-    }
-    
-    .card__text-block__paragraph{
-      padding-left: 3%;
-      padding-top: 2%;
-      font-size: 1.5rem;
-    }
+.card__text-block__paragraph {
+  padding-left: 3%;
+  padding-top: 2%;
+  font-size: 1.5rem;
+}
 
+/* -----------Footer-------- */
+.card__footer {
+  background-color: hsl(var(--hue-4), 30%, 80%);
+  border-top: 2px solid hsl(var(--hue-1), 30%, 40%);
+  display: inline-block;
+  border-radius: 0rem 0rem 1rem 1rem;
+}
+.card__footer__button {
+  width: 40%;
+  margin: 4.5% 4.5% 4.5% 54%;
+  border-radius: 1rem;
+  text-align: center;
+  color: var(--white);
+  box-shadow: 1px 1px 1px hsl(var(--hue-1), 30%, 40%);
+  background-color: hsl(var(--hue-1), 30%, 40%);
+}
+.card__footer__button p {
+  padding: 6%;
+}
 
-     /* -----------Footer-------- */
-    .card__footer {
-      
-      background-color: hsl(var(--hue-4), 30%, 80%);
-      border-top: 2px solid hsl(var(--hue-1), 30%, 40%);
-      justify-content: right;
-      display: flex;
-      border-radius: 0rem 0rem 1rem 1rem;
-    }
-    .card__footer__button {
-      width: 40%;
-      
-      margin-right: 4%;
-      border-radius: 1rem;
-      margin-top: 4.5%;
-      margin-bottom: 4.5%;
-      text-align: center;
-      color: var(--white);
-      box-shadow: 1px 1px 1px hsl(var(--hue-1), 30%, 40%);
-      background-color: hsl(var(--hue-1), 30%, 40%);
-    }
-    .card__footer__button--paragraph {
-      padding: 6%;
-    }
+/* -----------Icon-------- */
+.card__icon {
+  width: 18.5%;
+  background-color: hsl(var(--hue-1), 30%, 50%);
+  border-radius: 50%;
+  justify-content: center;
+  transform: translate(-50%, 50%);
+  padding: 2.5%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  box-shadow: 0px 3px 5px hsl(var(--hue-1), 30%, 50%);
+}
 
-     /* -----------Icon-------- */
-    .card__icon{
-        width: 18.5%;
-        background-color: hsl(var(--hue-1), 30%, 50%);
-        border-radius: 50% ;
-        justify-content: center;
-        transform: translate(-50%, 50%);
-        padding: 2.5%;
-        position:absolute;
-        bottom: 0;
-        right: 0;
-        box-shadow: 0px 3px 5px hsl(var(--hue-1), 30%, 50%);
-    }
-
-     /* -------------------Rött kort----------------- */
-    .card--danger header{
-      background: linear-gradient(to bottom right, hsl(var(--hue-3), 30%, 40%), hsl(var(--hue-3), 45%, 55%));   
-    }
-    .card--danger header p {
-      padding-bottom: 2.5%; 
-    }
-    .card--danger button {
-      background-color: hsl(var(--hue-3), 30%, 40%);
-      box-shadow: 1px 1px 1px hsl(var(--hue-3), 30%, 40%);
-    }
-    .card--danger icon {
-      background-color: hsl(var(--hue-3), 30%, 50%);
-      box-shadow: 0px 3px 5px hsl(var(--hue-3), 30%, 50%);
-    }
-    .card--danger footer {
-      border-color: hsl(var(--hue-3), 30%, 40%) ;
-    }
+/* -------------------Rött kort----------------- */
+.card--danger header {
+  background: linear-gradient(
+    to bottom right,
+    hsl(var(--hue-3), 30%, 40%),
+    hsl(var(--hue-3), 45%, 55%)
+  );
+}
+.card--danger button {
+  background-color: hsl(var(--hue-3), 30%, 40%);
+  box-shadow: 1px 1px 1px hsl(var(--hue-3), 30%, 40%);
+}
+.card--danger icon {
+  background-color: hsl(var(--hue-3), 30%, 50%);
+  box-shadow: 0px 3px 5px hsl(var(--hue-3), 30%, 50%);
+}
+.card--danger footer {
+  border-color: hsl(var(--hue-3), 30%, 40%);
+}
 
 /* -------------------Grönt kort----------------- */
-.card--success{
-       
-   margin-top: 15%;
+.card--success {
+  margin-top: 15%;
 }
-      
-  .card--success header{
-    background: linear-gradient(to bottom right, hsl(var(--hue-4), 30%, 40%), hsl(var(--hue-4), 45%, 55%));
-  }
-  .card--success button {
-    background-color: hsl(var(--hue-4), 30%, 40%);
-    box-shadow: 1px 1px 1px hsl(var(--hue-4), 30%, 40%);
-  }
-  .card--success icon {
-    background-color: hsl(var(--hue-4), 30%, 50%);
-    box-shadow: 0px 3px 5px hsl(var(--hue-4), 30%, 50%);
-  }
-  .card--success footer {
-    border-color: hsl(var(--hue-4), 30%, 40%) ;
-  }
 
+.card--success header {
+  background: linear-gradient(
+    to bottom right,
+    hsl(var(--hue-4), 30%, 40%),
+    hsl(var(--hue-4), 45%, 55%)
+  );
+}
+.card--success button {
+  background-color: hsl(var(--hue-4), 30%, 40%);
+  box-shadow: 1px 1px 1px hsl(var(--hue-4), 30%, 40%);
+}
+.card--success icon {
+  background-color: hsl(var(--hue-4), 30%, 50%);
+  box-shadow: 0px 3px 5px hsl(var(--hue-4), 30%, 50%);
+}
+.card--success footer {
+  border-color: hsl(var(--hue-4), 30%, 40%);
+}
 
-  @media only screen and (min-width: 768px) {
-   .grid-container {
-     display: grid;
-     grid-template-areas:
-     "gl gl gl gl gl ."
-     ". r r r r r"
-     "g g g g g ." 
-     ". b b b b b";
-     
-   }
-   .card__icon{
+@media only screen and (min-width: 768px) {
+  section + .container {
+    display: grid;
+    grid-template-areas:
+      "top top . . . ."
+      "gl gl gl gl gl ."
+      ". r r r r r"
+      "g g g g g ."
+      ". b b b b b";
+  }
+  .card__icon {
     width: 13%;
-   }
-    .glass {
-      display: grid;
-      grid-area: gl;
-    }
-    .progress {
-      width: 100%;
-    }
-    .card{
-      grid-area: b;
-      margin-top: 10%;
-    }
-    .card__text-block__paragraph{
-      padding-right: 27%;
-    }
-    .card--success{
-      grid-area: g;
-    }
-    .card--danger{
-      grid-area: r;
-    }
   }
-
-
-
-  @media only screen and (min-width: 992px){
-    .grid-container{
-      grid-template-columns: repeat(6, 1fr);
-      display: grid;
-      gap: 1rem;
-      grid-template-areas:
-      ". . . r r r" 
+  h2 + div {
+    grid-area: gl;
+  }
+  .progress {
+    width: 100%;
+  }
+  .card {
+    grid-area: b;
+    margin-top: 10%;
+  }
+  .card__text-block__paragraph {
+    padding-right: 27%;
+  }
+  .card--success {
+    grid-area: g;
+  }
+  .card--danger {
+    grid-area: r;
+  }
+}
+@media only screen and (min-width: 992px) {
+  section + .container {
+    grid-template-columns: repeat(6, 1fr);
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+      "top top . . . ."
+      "gl gl gl r r r"
       "g g g b b b";
-    }
-    .glass { 
-    }
-    .progress {
-      padding-top: 10%;
-      padding-bottom: 10%;
-    }
-    .card { 
-      margin-top: initial;
-    }
-    .card--success{
-      margin-right: 0;
-    } 
-    h2 + div {
-      width: 49%;
-    }   
   }
-  
-    
-    
+
+  .progress {
+    padding-top: 15.3%;
+    padding-bottom: 15.3%;
+  }
+  .card {
+    margin-top: initial;
+  }
+  .card__text-block__paragraph--mod {
+    padding-bottom: 2.3rem;
+  }
+}
