@@ -150,7 +150,6 @@
       </section>
       <section
         class="
-          <!-- grid-container -->
           container
           container--bg-sea-spray
           container--bg-blur-4
@@ -176,13 +175,14 @@
         
         <!-- Här lägger ni in era cards -->
         
+        
         <!-- ---------Kort 1---------- -->
-            <div class="card card--danger">
-              <header class="card__header">
-                <h2 class="card__title">
-                  <span class="card__title--large">A Web Designer </span>
-                  <span class="card__title--small">with experience to boot</span>
-                </h2>
+            <section class="card card--danger">
+              <header class="card__header"> 
+                <h3 class="card__title">
+                  A Web Designer 
+                <span>with experience to boot</span>
+              </h3>
                 <icon class="card__icon">
                   <img class="card__icon__imgage" src="./img/icons/globe.svg" alt="icon med globe"/>
                 </icon>
@@ -201,21 +201,19 @@
                 </p>
               </div>
               <footer class="card__footer">
-                <button class="card__footer__button">
-                  <p>Read more</p>
-                </button>
+                <a class="card__footer__button" href="#">Read more</a>
               </footer>
-            </div>  
-
+            </section>  
+            
           <!-- ---------Kort 2---------- -->
           <div class="card card--success">
             <header class="card__header">
-              <h2 class="card__title">
-                <span class="card__title--large">Retoucher </span>
-                <span class="card__title--small">high end costumers</span>
-              </h2>
+              <h3 class="card__title">
+                Retoucher 
+              <span>high end costumers</span>
+            </h3>
               <icon class="card__icon">
-                <img class="card__icon__imgage" src="./img/icons/wand.svg" alt="icon med globe"/>
+                <img src="./img/icons/wand.svg" alt="icon med  ett trollspö"/>
               </icon>
             </header>
             <div class="card__text-block"> 
@@ -231,9 +229,7 @@
               </p>
             </div>
             <footer class="card__footer">
-              <button class="card__footer__button">
-                <p>Read more</p>
-              </button>
+              <a class="card__footer__button" href="#">Read more</a>
             </footer>
           </div>
 
@@ -241,12 +237,12 @@
           <!-- ---------Kort 3---------- -->
           <div class="card">
             <header class="card__header">
-              <h2 class="card__title">
-                <span class="card__title--large">Miscellaneous</span>
-                <span class="card__title--small"></span>
-              </h2>  
+              <h3 class="card__title">
+                Miscellaneous 
+              <span></span>
+            </h3>  
               <icon class="card__icon">
-                <img class="card__icon__imgage" src="./img/icons/miscellaneous.svg" alt="icon med globe"/>
+                <img src="./img/icons/miscellaneous.svg" alt="icon med tre prickar"/>
               </icon>
             </header>
             <div class="card__text-block">
@@ -262,15 +258,36 @@
               </p>
             </div>
             <div class="card__footer">
-              <div class="card__footer__button">
+              <a class="card__footer__button" href="#">Read more</a>
+              <!-- <button class="card__footer__button">
                 <p>Read more</p>
-              </div>
+              </button> -->
             </div>         
           </div>
       </section>
 
       <!-- Här lägger ni in ert quote med image -->
-
+      <div class="card-quote">
+        <header class="card-quote__header">
+          <img class="card-quote__img"  src="./img/members/for_project/person_backup_1024.png"
+          srcset="
+          ./img/members/for_project/person_512.webp 512w,
+          ./img/members/for_project/person_768.webp 768w,
+          ./img/members/for_project/person_1024.webp 1024w,
+          ./img/members/for_project/person_1280.webp 1280w,
+          ./img/members/for_project/person_1536.webp 1536w,
+          ./img/members/for_project/person_2048.webp 2048w,
+          ./img/members/for_project/person_4096.webp 4096w,"
+          sizes="(min-width: 0px) 35vw"
+           alt="Person med rosa tröja">
+        </header>
+        <div class="card-quote__main">
+          <blockquote class="card-quote__main__text">Continuous effort, not strength nor intelligence, is the key to unlocking our potential.</blockquote>
+          <cite class="card-quote__main__sign">— Winston Churchill</cite>
+        </div>  
+      </div>
+        
+        
       <section
         class="
           container
