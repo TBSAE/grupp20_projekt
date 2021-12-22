@@ -1,0 +1,34 @@
+@media only screen and (min-width: 768px) {
+    section + .container {
+    grid-template-columns: repeat(6, 1fr);
+    display: grid;
+    grid-template-areas:
+      "top top . . . . "
+      "gl gl gl gl gl  ."
+      ".  r r r r r"
+      "g g g g g ."
+      ".  b b b b b";
+    } 
+    h2 + div {
+      grid-area: gl;
+    }
+    .card {
+      grid-area: b;
+    }
+    .card--success {
+      grid-area: g;
+    }
+    .card--danger {
+      grid-area: r;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    section + .container {
+      display: grid;
+      gap: 1rem;
+      grid-template-areas:
+        "top top . . . ."
+        "gl gl gl r r r"
+        "g g g b b b";
+    }
+  }
