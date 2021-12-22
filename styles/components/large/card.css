@@ -16,9 +16,9 @@
 
 .card__header {
   background: linear-gradient(
-    to bottom right,
-    hsl(var(--hue-1), 30%, 40%),
-    hsl(var(--hue-1), 45%, 55%)
+    to left,
+    hsl(var(--hue-1), 39%, 60%),
+    hsl(var(--hue-1), 39%, 39%)
   );
   color: var(--white);
   border-radius: 1rem 1rem 0rem 0rem;
@@ -49,7 +49,7 @@
 
 /* -----------Text-block-------- */
 .card__text-block {
-  background-color: hsl(var(--hue-4), 30%, 80%);
+  background-color: hsla(var(--white-hue), 99%, 95%, .6);
   padding-bottom: 9%;
   padding-top: 7%;
 }
@@ -62,7 +62,7 @@
 
 /* -----------Footer-------- */
 .card__footer {
-  background-color: hsl(var(--hue-4), 30%, 80%);
+  background-color: hsla(var(--white-hue), 99%, 95%, .6);
   border-top: 2px solid hsl(var(--hue-1), 30%, 40%);
   display: inline-block;
   border-radius: 0rem 0rem 1rem 1rem;
