@@ -17,9 +17,9 @@
 
 .card__header {
   background: linear-gradient(
-    to bottom right,
-    hsl(var(--hue-1), 30%, 40%),
-    hsl(var(--hue-1), 45%, 55%)
+    to left,
+    hsl(var(--hue-1), 39%, 60%),
+    hsl(var(--hue-1), 39%, 39%)
   );
   color: var(--white);
   border-radius: 1rem 1rem 0rem 0rem;
